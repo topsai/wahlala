@@ -39,7 +39,7 @@ cabin_choices = (
 )
 
 
-class searchAirLegs(ModelForm):
+class searchAirLegs(models.Model):
     # 舱位等级
     cabinClass = models.CharField(max_length=20, choices=cabin_choices)
     departureDate = models.DateField()
